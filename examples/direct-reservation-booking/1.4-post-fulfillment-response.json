@@ -1,0 +1,17 @@
+{
+    "warnings": [
+        {
+            "code": "EXAMPLE-BLT-WARNING-EXPIRED",
+            "text": "Requested booking has already expired"
+        }
+    ],
+    "fulfillments": [
+        {
+            "id": "{{fulfillment_id}}",
+            "status" : "FULFILLED",
+            "offerParts" : [
+                { "id" : "{{reservation_id}}" }
+            ]
+        }
+    ]
+}

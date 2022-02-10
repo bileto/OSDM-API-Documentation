@@ -1,0 +1,11 @@
+{
+    "refundOffer": {
+        "id": "{{refund_offer_id}}",
+        "status": "CONFIRMED",
+        "reimbursementStatus": "IMMEDIATE",
+        "appliedOverruleCode": null,
+        "fulfillments": [
+            "{{fulfillment_id}}"
+        ]
+    }
+}

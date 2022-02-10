@@ -137,23 +137,10 @@
                                 {
                                     "type": "REFUND",
                                     "description": "Reservation Refund Fee",
-                                    "price": {
-                                        "currency": "CZK",
-                                        "amount": 0,
-                                        "scale": 2,
-                                        "vatDetails": [
-                                            {
-                                                "country": "CZ",
-                                                "scale": 2,
-                                                "percentage": 10,
-                                                "scope": "NATIONAL"
-                                            }
-                                        ]
-                                    }
+                                    "validFrom": "2021-05-22T13:06:00+02:00",
+                                    "validTo": "2021-08-07T20:33:00+02:00"
                                 }
-                            ],
-                            "validFrom": "2021-05-22T13:06:00+02:00",
-                            "validTo": "2021-08-07T20:33:00+02:00"
+                            ]
                         }
                     ]
                 }
@@ -163,6 +150,9 @@
                     "id": "{{passenger_id}}",
                     "externalReference": null,
                     "dateOfBirth": "1996-01-01",
+                    "details" : {
+                        "eMail" : null
+                    },
                     "cards": []
                 }
             ]

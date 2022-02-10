@@ -1,0 +1,25 @@
+{
+    "selectedOffers": [
+        {
+            "selectedOfferId": "{{offer_id}}",
+            "placeSelections": {
+                "reservationId": "{{reservation_id}}",
+                "placeSelection": {
+                    "selectedCoach": {
+                        "selectedCoaches": [
+                            {
+                                "coachNumber": "A",
+                                "selectedPlaces": [
+                                    {
+                                        "passengerId": "{{passengerId}}",
+                                        "place": "31"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

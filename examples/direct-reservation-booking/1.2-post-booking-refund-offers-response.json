@@ -1,0 +1,41 @@
+{
+    "refundOffersCollection": {
+        "refundOffers": [
+            {
+                "id": "{{refund_offer_id}}",
+                "status": "PROPOSED",
+                "reimbursementStatus": "IMMEDIATE",
+                "appliedOverruleCode": null,
+                "fulfillments": [
+                    "{{fulfillment_id}}"
+                ],
+                "refundFee": {
+                    "currency": "CZK",
+                    "amount": 0,
+                    "scale": 2,
+                    "vatDetails": [
+                        {
+                            "country": "CZ",
+                            "scale": 2,
+                            "percentage": 10,
+                            "scope": "NATIONAL"
+                        }
+                    ]
+                },
+                "refundAmount": {
+                    "currency": "CZK",
+                    "amount": 25,
+                    "scale": 2,
+                    "vatDetails": [
+                        {
+                            "country": "CZ",
+                            "scale": 2,
+                            "percentage": 10,
+                            "scope": "NATIONAL"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
