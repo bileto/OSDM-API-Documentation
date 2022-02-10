@@ -1,0 +1,26 @@
+{
+    "reservation": {
+        "vehicle": [
+            {
+                "layoutId": "{{layout_id}}",
+                "number": "A",
+                "compartements": [
+                    {
+                        "places": [
+                            {
+                                "number": "31",
+                                "status": "FREE"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "preSelection": [
+            {
+                "coach": "A",
+                "place": "13"
+            }
+        ]
+    }
+}

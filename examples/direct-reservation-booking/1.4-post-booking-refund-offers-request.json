@@ -1,0 +1,6 @@
+{
+    "fulfillmentIds" : [
+        "{{fulfillment_id}}"
+    ],
+    "overruleCode" : "PAYMENT_FAILURE"
+}

@@ -1,8 +1,11 @@
 {
     "passengers": [
         {
-            "dateOfBirth": "2003-01-01",
+            "dateOfBirth": "1996-01-01",
             "externalReference": null,
+            "details" : {
+                "eMail" : null
+            },
             "cards": []
         }
     ],

@@ -1,0 +1,23 @@
+{
+    "booking": {
+        "id": "{{booking_id}}",
+        "reference": "1AB2C3",
+        "status": "PREBOOKED",
+        "booker" : {
+            "externalReference": null,
+            "details" : {
+                "eMail" : null
+            }
+        },
+        "passengers": [
+            {
+                "dateOfBirth": "1996-01-01",
+                "externalReference": null,
+                "details" : {
+                    "eMail" : null
+                },
+                "cards": []
+            }
+        ]
+    }
+}
