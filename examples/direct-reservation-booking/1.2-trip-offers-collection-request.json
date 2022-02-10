@@ -1,0 +1,89 @@
+{
+    "passengers": [
+        {
+            "dateOfBirth": "2003-01-01",
+            "cards": []
+        }
+    ],
+    "tripSearchCriteria": {
+        "stopBehavior": "ORIGIN_DESTINATION_ONLY",
+        "trips": [
+            {
+                "trip": [
+                    {
+                        "index": 0,
+                        "vehicle": {
+                            "numbers": [
+                                "1076"
+                            ],
+                            "line": "R14A",
+                            "serviceBrand": "R",
+                            "transportMode": "TRAIN"
+                        },
+                        "duration": "P2H56M",
+                        "origin": {
+                            "location": {
+                                "station": {
+                                    "country": "CZ",
+                                    "codes": [
+                                        {
+                                            "codeList": "UIC",
+                                            "code": "5453613"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "destination": {
+                            "location": {
+                                "station": {
+                                    "country": "cz",
+                                    "codes": [
+                                        {
+                                            "codeList": "UIC",
+                                            "code": "5454212"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "travelDateTime": {
+            "dateTime": "2021-02-03T00:00:00+02:00",
+            "isArrival": false
+        },
+        "maxChanges": 0,
+        "extendedChangeTime": 0,
+        "needsPRMAssistance": false
+    },
+    "offerSearchCriteria": {
+        "currency": "CZK",
+        "requestedOfferParts": [
+            "RESERVATION"
+        ],
+        "serviceClassIds": [
+            "STANDARD"
+        ],
+        "comfortClasses": [
+            "SECOND"
+        ],
+        "embed": [
+            "TRIPOFFERS",
+            "TRIPOFFERS.TRIP",
+            "TRIPOFFERS.OFFERS",
+            "TRIPOFFERS.OFFERS.OFFERPARTS",
+            "TRIPOFFERS.PASSENGERS"
+        ]
+    },
+    "requestedFulfillmentOptions": [
+        {
+            "type": "ETICKET",
+            "media": [
+                "PDF_A4"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "passengers": [
+        {
+            "dateOfBirth": "2003-01-01",
+            "externalReference": null,
+            "cards": []
+        }
+    ],
+    "tripSearchCriteria": {
+        "departureTime": "2021-02-03T00:00:00+02:00",
+        "origin": {
+            "id": "urn:uic:stn:5453613"
+        },
+        "destination": {
+            "id": "urn:uic:stn:5454212"
+        },
+        "params": {
+            "transferLimit": 0,
+            "dataFilter": {
+                "serviceBrandFilter": {
+                    "serviceBrands": [
+                        "R"
+                    ]
+                },
+                "vehicleFilter": {
+                    "vehicleNumbers": [
+                        "1076"
+                    ]
+                }
+            }
+        }
+    },
+    "offerSearchCriteria": {
+        "currency": "CZK",
+        "requestedOfferParts": [
+            "RESERVATION"
+        ],
+        "serviceClassIds": [
+            "STANDARD"
+        ],
+        "comfortClasses": [
+            "SECOND"
+        ]
+    },
+    "embed": [
+        "TRIPOFFERS",
+        "TRIPOFFERS.TRIP",
+        "TRIPOFFERS.OFFERS",
+        "TRIPOFFERS.OFFERS.OFFERPARTS",
+        "TRIPOFFERS.PASSENGERS"
+    ],
+    "requestedFulfillmentOptions": [
+        {
+            "type": "ETICKET",
+            "media": [
+                "PDF_A4"
+            ]
+        }
+    ]
+}
