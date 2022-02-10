@@ -1,0 +1,154 @@
+{
+    "id": "{{trip-offers-collection_id}}",
+    "tripOffers": [
+        {
+            "id": "{{trip_offers_id}}",
+            "trip": {
+                "id": "{{trip_id}}",
+                "segments": [
+                    {
+                        "id": "{{segment_id}}",
+                        "index": 0,
+                        "duration": "P2H56M",
+                        "origin": {
+                            "arrivalDateTime": "2021-08-07T21:03:00+02:00",
+                            "departureDateTime": "2021-08-07T21:03:00+02:00"
+                        },
+                        "destination": {
+                            "arrivalDateTime": "2021-08-07T23:59:00+02:00",
+                            "departureDateTime": "2021-08-07T23:59:00+02:00"
+                        },
+                        "vehicle": {
+                            "numbers": [
+                                "1076"
+                            ],
+                            "line": "R14A",
+                            "serviceBrand": "R",
+                            "transportMode": "TRAIN"
+                        }
+                    }
+                ],
+                "origin": {
+                    "arrivalDateTime": "2021-08-07T21:03:00+02:00",
+                    "departureDateTime": "2021-08-07T21:03:00+02:00"
+                },
+                "destination": {
+                    "arrivalDateTime": "2021-08-07T23:59:00+02:00",
+                    "departureDateTime": "2021-08-07T23:59:00+02:00"
+                },
+                "duration": "P2H56M"
+            },
+            "offers": [
+                {
+                    "id": "{{offer_id}}",
+                    "offerSummary": {
+                        "minimalPrice": {
+                            "currency": "CZK",
+                            "overallServiceClass": {
+                                "id": "STANDARD"
+                            },
+                            "overallComfortClass": "SECOND",
+                            "overallFlexibility": "FLEX"
+                        },
+                        "isReusable": false,
+                        "coveredSegmentIndexes": [
+                            0
+                        ],
+                        "availableFulfillmentTypes": [
+                            "ETICKET"
+                        ],
+                        "validFrom": "2021-05-22T13:06:11.952Z",
+                        "validUntil": "2021-04-22T13:06:11.952Z",
+                        "reservations": [
+                            {
+                                "id": "{{reservation_id}}",
+                                "commonOfferPartAttributes": {
+                                    "price": {
+                                        "currency": "CZK",
+                                        "amount": 25,
+                                        "scale": 2,
+                                        "vatDetails": [
+                                            {
+                                                "country": "CZ",
+                                                "scale": 2,
+                                                "percentage": 10,
+                                                "scope": "NATIONAL"
+                                            }
+                                        ]
+                                    },
+                                    "providerBookingReference": "1AB2C3",
+                                    "availableFulfillmentOptions": [
+                                        {
+                                            "fulfillmentType": "ETICKET",
+                                            "media": [
+                                                "PDF_A4"
+                                            ]
+                                        }
+                                    ],
+                                    "validFrom": "2021-05-22T15:06:11.966Z",
+                                    "validUntil": "2021-04-12T15:06:11.966Z",
+                                    "refundable": "YES",
+                                    "exchangeable": "NO"
+                                },
+                                "fees": [
+                                    {
+                                        "id": "{{fee_id}}"
+                                    }
+                                ],
+                                "optionality": "INCLUDED"
+                            }
+                        ],
+                        "fees": [
+                            {
+                                "id": "{{fee_id}}",
+                                "price": {
+                                    "currency": "CZK",
+                                    "amount": 0,
+                                    "scale": 2,
+                                    "vatDetails": [
+                                        {
+                                            "country": "CZ",
+                                            "scale": 2,
+                                            "percentage": 10,
+                                            "scope": "NATIONAL"
+                                        }
+                                    ]
+                                },
+                                "applicability": "BOOKING",
+                                "refundable": "YES",
+                                "conditions": [
+                                    {
+                                        "type": "REFUND",
+                                        "description": "Reservation Refund Fee",
+                                        "price": {
+                                            "currency": "CZK",
+                                            "amount": 0,
+                                            "scale": 2,
+                                            "vatDetails": [
+                                                {
+                                                    "country": "CZ",
+                                                    "scale": 2,
+                                                    "percentage": 10,
+                                                    "scope": "NATIONAL"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "validFrom": "2021-05-22T13:06:00+02:00",
+                                "validTo": "2021-05-22T13:06:00+02:00"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "passengers": [
+                {
+                    "id": "{{passenger_id}}",
+                    "dateOfBirth": "2003-01-01",
+                    "cards": []
+                }
+            ]
+        }
+    ]
+}
