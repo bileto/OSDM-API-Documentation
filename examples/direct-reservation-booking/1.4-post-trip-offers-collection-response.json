@@ -6,22 +6,23 @@
             "trip": {
                 "id": "{{trip_id}}",
                 "duration": "P2H56M",
-                "transfers": 0,
                 "startTime": "2021-08-07T21:03:00+02:00",
                 "endTime": "2021-08-07T23:59:00+02:00",
+                "transfers": 0,
                 "tripLegs": [
                     {
-                        "legId": "{{trip_leg_id}}",
-                        "seqId": 0,
+                        "id": "{{trip_leg_id}}",
                         "timedLeg": {
-                            "legBoard": {
+                            "start": {
                                 "stopPlaceRef": "urn:uic:stn:5453613",
+                                "stopPlaceName": "Pardubice hl.n.",
                                 "serviceDeparture": {
                                     "timetabledTime": "2021-08-07T21:03:00+02:00"
                                 }
                             },
-                            "legAlight": {
+                            "end": {
                                 "stopPlaceRef": "urn:uic:stn:5454212",
+                                "stopPlaceName": "Liberec",
                                 "serviceArrival": {
                                     "timetabledTime": "2021-08-07T23:59:00+02:00"
                                 }
@@ -30,9 +31,12 @@
                                 "mode": {
                                     "ptMode": "TRAIN"
                                 },
-                                "publishedServiceName": "R 1076",
-                                "vehicleNumber": "1076",
-                                "operatorRef": "urn:uic:rics:3189"
+                                "vehicleNumber": [
+                                    "1076"
+                                ],
+                                "operatorRef": [
+                                    "urn:uic:rics:3189"
+                                ]
                             },
                             "duration": "P2H56M"
                         }
@@ -42,6 +46,7 @@
             "offers": [
                 {
                     "id": "{{offer_id}}",
+                    "offerType": "Offer",
                     "offerSummary": {
                         "minimalPrice": {
                             "currency": "CZK",
@@ -57,15 +62,16 @@
                             ]
                         },
                         "overallServiceClass": {
-                            "id": "STANDARD"
+                            "type": "STANDARD",
+                            "name": "Standard"
                         },
                         "overallComfortClass": "SECOND",
-                        "overallFlexibility": "FLEX"
+                        "overallFlexibility": "FULL_FLEXIBLE"
                     },
                     "isReusable": false,
                     "priceGuaranteedUntil": "2022-02-10T11:59+02:00",
-                    "coveredSegmentIndexes": [
-                        0
+                    "coveredLegIds": [
+                        "{{trip_leg_id}}"
                     ],
                     "availableFulfillmentTypes": [
                         "ETICKET"
@@ -80,7 +86,7 @@
                                     "currency": "CZK",
                                     "amount": 25,
                                     "scale": 2,
-                                    "vatDetails": [
+                                    "vats": [
                                         {
                                             "country": "CZ",
                                             "scale": 2,
@@ -95,7 +101,7 @@
                                 "providerBookingReference": "1AB2C3",
                                 "availableFulfillmentOptions": [
                                     {
-                                        "fulfillmentType": "ETICKET",
+                                        "type": "ETICKET",
                                         "media": [
                                             "PDF_A4"
                                         ]
@@ -104,43 +110,32 @@
                                 "validFrom": "2021-08-07T21:03:00+02:00",
                                 "validUntil": "2021-08-07T23:59:00+02:00",
                                 "refundable": "YES",
-                                "exchangeable": "NO"
-                            },
-                            "reservationDetails": {},
-                            "fees": [
-                                {
-                                    "id": "{{fee_id}}"
-                                }
-                            ],
-                            "optionality": "INCLUDED"
-                        }
-                    ],
-                    "fees": [
-                        {
-                            "id": "{{fee_id}}",
-                            "price": {
-                                "currency": "CZK",
-                                "amount": 0,
-                                "scale": 2,
-                                "vatDetails": [
+                                "exchangeable": "NO",
+                                "afterSaleConditions": [
                                     {
-                                        "country": "CZ",
-                                        "scale": 2,
-                                        "percentage": 10,
-                                        "scope": "NATIONAL"
+                                        "condition": "REFUND",
+                                        "validTo": "2021-08-07T20:58:00+02:00",
+                                        "afterSaleFee": {
+                                            "currency": "CZK",
+                                            "amount": 0,
+                                            "scale": 2,
+                                            "vats": [
+                                                {
+                                                    "country": "CZ",
+                                                    "scale": 2,
+                                                    "percentage": 10,
+                                                    "scope": "NATIONAL"
+                                                }
+                                            ]
+                                        }
                                     }
                                 ]
                             },
-                            "applicability": "BOOKING",
-                            "refundable": "YES",
-                            "conditions": [
-                                {
-                                    "type": "REFUND",
-                                    "description": "Reservation Refund Fee",
-                                    "validFrom": "2021-05-22T13:06:00+02:00",
-                                    "validTo": "2021-08-07T20:33:00+02:00"
-                                }
-                            ]
+                            "reservationDetails": {
+                                "accommodationType": "SEAT",
+                                "accommodationSubType": null
+                            },
+                            "optionality": "INCLUDED"
                         }
                     ]
                 }
@@ -148,12 +143,12 @@
             "passengers": [
                 {
                     "id": "{{passenger_id}}",
-                    "externalReference": null,
+                    "externalRef": "optional-passenger-id-of-distributor",
+                    "type": "PERSON",
                     "dateOfBirth": "1996-01-01",
-                    "details" : {
-                        "eMail" : null
-                    },
-                    "cards": []
+                    "details" : null,
+                    "cards": [],
+                    "prmNeeds": []
                 }
             ]
         }
