@@ -1,57 +1,57 @@
 {
-    "passengers": [
+    "tripSpecifications": [
         {
-            "dateOfBirth": "1996-01-01",
-            "externalReference": null,
-            "details" : {
-                "eMail" : null
-            },
-            "cards": []
+            "externalRef": "required-external-trip-id-of-distributor",
+            "legs": [
+                {
+                    "externalRef": "required-external-leg-id-of-distributor",
+                    "timedLeg": {
+                        "board" : {
+                            "stopPlaceRef": "urn:uic:stn:5453613",
+                            "serviceDeparture": {
+                                "timetableTime": "2021-08-07T21:03:00+02:00"
+                            }
+                        },
+                        "align": {
+                            "stopPlaceRef": "urn:uic:stn:5454212",
+                            "serviceArrival": {
+                                "timetableTime": "2021-08-07T23:59:00+02:00"
+                            }
+                        },
+                        "service": {
+                            "vehicleNumbers": [
+                                "1076"
+                            ],
+                            "operatorRefs": [
+                                "urn:uic:rics:3189"
+                            ]
+                        }
+                    }
+                }
+            ]
         }
     ],
-    "tripSearchCriteria": {
-        "departureTime": "2021-02-03T00:00:00+02:00",
-        "origin": {
-            "id": "urn:uic:stn:5453613"
-        },
-        "destination": {
-            "id": "urn:uic:stn:5454212"
-        },
-        "params": {
-            "transferLimit": 0,
-            "dataFilter": {
-                "serviceBrandFilter": {
-                    "serviceBrands": [
-                        "R"
-                    ]
-                },
-                "vehicleFilter": {
-                    "vehicleNumbers": [
-                        "1076"
-                    ]
-                }
-            }
+    "passengerSpecifications": [
+        {
+            "dateOfBirth": "1996-01-01",
+            "externalRef": "optional-passenger-id-of-distributor",
+            "type": "PERSON",
+            "cards": [],
+            "prmNeeds": []
         }
-    },
+    ],
     "offerSearchCriteria": {
         "currency": "CZK",
         "requestedOfferParts": [
             "RESERVATION"
         ],
-        "serviceClassIds": [
+        "serviceClassTypes": [
             "STANDARD"
         ],
         "comfortClasses": [
             "SECOND"
         ]
     },
-    "embed": [
-        "TRIPOFFERS",
-        "TRIPOFFERS.TRIP",
-        "TRIPOFFERS.OFFERS",
-        "TRIPOFFERS.OFFERS.OFFERPARTS",
-        "TRIPOFFERS.PASSENGERS"
-    ],
     "requestedFulfillmentOptions": [
         {
             "type": "ETICKET",
@@ -59,5 +59,12 @@
                 "PDF_A4"
             ]
         }
+    ],
+    "embed": [
+        "TRIPOFFERS",
+        "TRIPOFFERS.TRIP",
+        "TRIPOFFERS.OFFERS",
+        "TRIPOFFERS.OFFERS.OFFERPARTS",
+        "TRIPOFFERS.PASSENGERS"
     ]
 }
