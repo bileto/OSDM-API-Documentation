@@ -1,9 +1,7 @@
 {
-    "booker" : {
-        "externalReference": null,
-        "details" : {
-            "eMail" : null
-        }
+    "purchaser" : {
+        "externalRef": "optional-purchaser-id-of-distributor",
+        "eMail": "optionally.provided@email.address"
     },
     "selectedOffers": [
         {
