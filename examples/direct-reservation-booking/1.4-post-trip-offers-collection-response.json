@@ -133,7 +133,7 @@
                             },
                             "reservationDetails": {
                                 "accommodationType": "SEAT",
-                                "accommodationSubType": null
+                                "accommodationSubType": "ANY_SEAT"
                             },
                             "optionality": "INCLUDED"
                         }
