@@ -13,7 +13,7 @@
                 "currency": "CZK",
                 "amount": 0,
                 "scale": 2,
-                "vatDetails": [
+                "vats": [
                     {
                         "country": "CZ",
                         "scale": 2,
@@ -26,7 +26,7 @@
                 "currency": "CZK",
                 "amount": 25,
                 "scale": 2,
-                "vatDetails": [
+                "vats": [
                     {
                         "country": "CZ",
                         "scale": 2,
