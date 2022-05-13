@@ -5,6 +5,7 @@
             "id": "{{trip_offers_id}}",
             "trip": {
                 "id": "{{trip_id}}",
+                "externalRef": "required-external-trip-id-of-distributor",
                 "duration": "P2H56M",
                 "startTime": "2021-08-07T21:03:00+02:00",
                 "endTime": "2021-08-07T23:59:00+02:00",
@@ -14,14 +15,14 @@
                         "id": "{{trip_leg_id}}",
                         "timedLeg": {
                             "start": {
-                                "stopPlaceRef": "urn:uic:stn:5453613",
+                                "stopPlaceRef": { "stopPlaceRef": "urn:uic:stn:5453613" } ,
                                 "stopPlaceName": "Pardubice hl.n.",
                                 "serviceDeparture": {
                                     "timetabledTime": "2021-08-07T21:03:00+02:00"
                                 }
                             },
                             "end": {
-                                "stopPlaceRef": "urn:uic:stn:5454212",
+                                "stopPlaceRef": { "stopPlaceRef": "urn:uic:stn:5454212" },
                                 "stopPlaceName": "Liberec",
                                 "serviceArrival": {
                                     "timetabledTime": "2021-08-07T23:59:00+02:00"
@@ -143,7 +144,7 @@
             "passengers": [
                 {
                     "id": "{{passenger_id}}",
-                    "externalRef": "optional-passenger-id-of-distributor",
+                    "externalRef": "optionally-provided-passenger-id-of-distributor",
                     "type": "PERSON",
                     "dateOfBirth": "1996-01-01",
                     "details" : null,
