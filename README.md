@@ -1,6 +1,6 @@
 # Documentation for Bileto Implementation of OSDM API
 
-Bileto implemented part of [OSDM](https://unioninternationalcheminsdefer.github.io/OSDM/) (Open Sales and Distribution Model) Specification to enable distributors with unified access to the Bileto Platform. This project documents supported workflows, and provides example to support developers.
+Bileto implemented part of [OSDM](https://www.osdm.io) (Open Sales and Distribution Model) Specification to enable distributors with unified access to the Bileto Platform. This project documents supported workflows, and provides example to support developers.
 
 ## Content
 
