@@ -1,21 +1,21 @@
 {
     "tripSpecifications": [
         {
-            "externalRef": "required-external-trip-id-of-distributor",
+            "externalRef": "optionally-provided-external-trip-id-of-distributor",
             "legs": [
                 {
-                    "externalRef": "required-external-leg-id-of-distributor",
+                    "externalRef": "optionally-provided-external-leg-id-of-distributor",
                     "timedLeg": {
-                        "board" : {
-                            "stopPlaceRef": "urn:uic:stn:5453613",
+                        "start" : {
+                            "stopPlaceRef": { "stopPlaceRef": "urn:uic:stn:5453613" },
                             "serviceDeparture": {
-                                "timetableTime": "2021-08-07T21:03:00+02:00"
+                                "timetabledTime": "2021-08-07T21:03:00+02:00"
                             }
                         },
-                        "align": {
-                            "stopPlaceRef": "urn:uic:stn:5454212",
+                        "end": {
+                            "stopPlaceRef": { "stopPlaceRef": "urn:uic:stn:5454212" },
                             "serviceArrival": {
-                                "timetableTime": "2021-08-07T23:59:00+02:00"
+                                "timetabledTime": "2021-08-07T23:59:00+02:00"
                             }
                         },
                         "service": {
@@ -34,7 +34,7 @@
     "passengerSpecifications": [
         {
             "dateOfBirth": "1996-01-01",
-            "externalRef": "optional-passenger-id-of-distributor",
+            "externalRef": "optionally-provided-passenger-id-of-distributor",
             "type": "PERSON",
             "cards": [],
             "prmNeeds": []
